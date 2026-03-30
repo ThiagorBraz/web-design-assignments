@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Play</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2a2a2a;
+        }
+
+        #Section1 {
+            background-color: slategrey;
+            width: 800px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .link1 {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 16px;
+            background-color: #3a3a3a;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .link1:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        #a3 {
+            background-color: aqua;
+            text-decoration: none;
+            color: red;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        #a3:hover {
+            background-color: red;
+            color: white;
+        }
+
+        #section2 {
+            background-color: gray;
+            width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .images-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #img1 {
+            width: 300px;
+        }
+
+        #img2 {
+            width: 200px;
+        }
+
+        #img3 {
+            width: 200px;
+        }
+
+        .p1 {
+            font-family: Arial;
+            color: yellow;
+            text-align: center;
+            font-size: 40px;
+            margin: 10px 0;
+        }
+
+        .media-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        #v1 {
+            width: 280px;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: greenyellow;
+            font-size: 15px;
+        }
+
+        .radio-group input {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        #Div3 {
+            background-color: yellow;
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+            width: 800px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="Section1">
+        <div class="nav-links">
+            <a id="a1" class="link1" href="https://www.nintendo.com" target="_blank">Nintendo</a>
+            <a id="a2" class="link1" href="https://www.xbox.com" target="_blank">XBox</a>
+        </div>
+        <img id="img1" src="GamesImg1.jpg" alt="Games" />
+        <a id="a3" href="mailto:thiago_braz@ymail.com">Contact Thiago Braz</a>
+    </section>
+
+    <section id="section2">
+        <div class="images-row">
+            <img id="img2" src="GamesImg2.jpg" alt="Games" />
+            <img id="img3" src="GrandTheftAuto.jpg" alt="Grand Theft Auto" />
+        </div>
+
+        <p class="p1">GAME ON!!!</p>
+
+        <div class="media-row">
+            <video id="v1" src="GrandTheftAuto.mp4" controls loop></video>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="GTA" value="Grand Theft Auto: London" />
+                    Grand Theft Auto: London
+                </label>
+                <label>
+                    <input type="radio" name="GTA" value="Grand Theft Auto: Vice City" />
+                    Grand Theft Auto: Vice City
+                </label>
+                <label>
+                    <input type="radio" name="GTA" value="Grand Theft Auto: San Andreas" />
+                    Grand Theft Auto: San Andreas
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div id="Div3">
+            <p>GRAND THEFT AUTO</p>
+        </div>
+    </section>
+
+</body>
+</html>

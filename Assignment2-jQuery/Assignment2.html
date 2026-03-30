@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment2</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="element" id="element1">Kids</div>
+    <div class="element" id="element2">Activities</div>
+
+    <div class="image-container">
+        <img src="Kids.png" class="hover-image" id="kidsImage">
+        <p class="hover-text" id="kidsText">Kids of all ages can enjoy our site!</p>
+    </div>
+    <div class="image-container">
+        <img src="Activity.png" class="hover-image" id="activityImage">
+        <p class="hover-text" id="activityText">Click, Hover, Drag-and-Drop and have fun!</p>
+    </div>
+
+    <label for="nameInput">Type your name:</label>
+    <input type="text" id="nameInput" placeholder="Type your name here">
+
+    <label for="dessertSelect">Select your dessert:</label>
+    <select id="dessertSelect">
+        <option value="Ice cream">Ice cream</option>
+        <option value="Cake">Cake</option>
+        <option value="Pancake">Pancake</option>
+    </select>
+
+    <button onclick="getName()">Submit</button>
+
+    <p id="nameDiv"></p>
+
+    <div class="container">
+        <img id="activity" src="Activity.png" class="image" draggable="true" ondragstart="dragStart(event)">
+        <img id="corner" src="Corner.png" class="image" draggable="true" ondragstart="dragStart(event)">
+        <img id="kids" src="Kids.png" class="image" draggable="true" ondragstart="dragStart(event)">
+    </div>
+
+    <div class="container">
+        <div id="dropzone1" class="dropzone" ondragover="allowDrop(event)" ondrop="dropImage(event)"></div>
+        <div id="dropzone2" class="dropzone" ondragover="allowDrop(event)" ondrop="dropImage(event)"></div>
+        <div id="dropzone3" class="dropzone" ondragover="allowDrop(event)" ondrop="dropImage(event)"></div>
+    </div>
+
+</body>
+</html>

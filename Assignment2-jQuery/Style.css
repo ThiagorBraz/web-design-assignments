@@ -1,0 +1,45 @@
+﻿body {
+    text-align: center;
+}
+
+.element {
+    display: inline-block;
+    background-color: pink;
+    color: purple;
+    border: 3px solid yellow;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.image-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.hover-image {
+    cursor: pointer;
+}
+
+.hover-text {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.image {
+    width: 125px;
+    height: 50px;
+    cursor: grab;
+}
+
+.dropzone {
+    width: 150px;
+    height: 100px;
+    border: solid black;
+    display: flex;
+}
